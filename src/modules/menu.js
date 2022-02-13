@@ -5,7 +5,6 @@ const menu = () => {
   const btnOpen = document.querySelector('.menu__icon')//кнопка меню которая открывает модальное окно
   const menuBtnClsoe = document.querySelector('.close-menu')//кнопка которая закрывает модальное окно
   const menuBtnClsoeLink = menuBlock.querySelectorAll('.menu-link')//кнопка которая закрывает модальное окно через элемент списка
-console.log(menuBtnClsoeLink);
   //адаптация 
   if (window.matchMedia("(min-width: 576px)").matches) {
       btnOpen.addEventListener("click", () => {
