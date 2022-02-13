@@ -3,8 +3,8 @@ const accordion = () => {
   const accordeon = document.querySelector('.accordion')
   const titles = document.querySelectorAll('.title_block')
 
-  accordeon.addEventListener('click', (e) => {
-    const target = e.target
+  accordeon.addEventListener('click', even => {
+    const target = even.target
 
     titles.forEach(accord => {
       if (accord === target && !accord.classList.contains('msg-active')) {
