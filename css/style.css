@@ -4455,6 +4455,9 @@ div.wave-block:nth-child(17):after {
     transform: translate(0, 50%);
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+
+    /* overflow: hidden;
+    height: 0; */
 }
 
 @media (max-width: 575px) {
