@@ -485,6 +485,7 @@ template, [hidden] {
     opacity: 0;
 }
 
+
 .header-contacts__arrow {
     cursor: pointer;
     -webkit-transition: 0.5s;

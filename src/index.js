@@ -5,6 +5,8 @@ import accordion  from "./modules/accordion";
 import scroll  from "./modules/scroll";
 import mask  from "./modules/mask";
 import clue  from "./modules/clue";
+import number  from "./modules/number";
+
 
 
 sliders()
@@ -14,4 +16,5 @@ accordion()
 scroll()
 mask()
 clue()
+number()
 //npm run watch
