@@ -1092,11 +1092,21 @@ template, [hidden] {
 }
 
 .formula-slider {
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
     min-height: 400px;
     margin-top: 102px;
 }
 
 @media (max-width: 575px) {
+    .formula-slider {
+        min-height: 265px;
+        margin-top: 52px;
+    }
+}
+@media (max-width: 1024px) {
     .formula-slider {
         min-height: 265px;
         margin-top: 52px;
@@ -1160,6 +1170,7 @@ template, [hidden] {
         margin-left: auto;
         margin-right: auto;
     }
+    
 }
 
 .formula .row {
@@ -4036,7 +4047,7 @@ div.wave-block:nth-child(17):after {
         margin-left: -30px;
     }
 }
-
+/*начало*/
 .reviews {
     position: relative;
     padding-top: 44px;
@@ -4135,7 +4146,8 @@ div.wave-block:nth-child(17):after {
 
 .reviews-slider {
     height: 314px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
 
 .reviews-slider-wrap {
@@ -4165,6 +4177,13 @@ div.wave-block:nth-child(17):after {
     align-items: center;
     text-align: center;
     color: #322823;
+    /* min-height: 100%; */
+    display: none;
+}
+
+.reviews-slider__slide-active{
+    display: flex;
+    position: absolute;
 }
 
 .reviews-slider__slide-img {
@@ -4212,7 +4231,7 @@ div.wave-block:nth-child(17):after {
     }
 }
 
-
+/*конец*/
 .faq {
     position: relative;
     padding-top: 84px;

@@ -11,6 +11,7 @@
 			rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
 	<script src="./dist/main.js" defer></script>
+	<link rel="icon" href="images/header/whatsApp.svg">
 	<title>Relax Live</title>
 </head>
 
@@ -260,7 +261,7 @@
 			<div class="section-title formula-title">Формула успешности <span>ремонта от Relax Live</span></div>
 			<div class="formula-slider-wrap">
 				<div class="formula-slider">
-					<div class="formula-item formula-slider__slide">
+					<div class="formula-item formula-slider__slide formula-slider__slide-active">
 						<div class="formula-item__icon">
 							<div class="formula-item-popup formula-item-popup-01">Работы ведутся
 								<strong>точно</strong> по графику со
@@ -853,9 +854,14 @@
 			</div>
 		</div>
 	</div><!-- /director -->
+
 	<div class="reviews" id="reviews">
 		<div class="section-title reviews__title">Мы рады делать <span>клиентов счастливыми</span></div>
+
+
+		<!-- общий контейнер со слайдером и стрелками (без точек) -->
 		<div class="reviews-slider-wrap">
+			<!-- стрелка левая-->
 			<div class="slider-arrow slider-arrow_left slider-arrow_left" id="reviews-arrow_left">
 				<svg width="17" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12"
 					 preserveAspectRatio="xMinYMin meet">
@@ -864,6 +870,7 @@
 							fill="#322823"></path>
 				</svg>
 			</div>
+			<!-- стрелка правая-->
 			<div class="slider-arrow slider-arrow_right" id="reviews-arrow_right">
 				<svg width="17" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 12"
 					 preserveAspectRatio="xMinYMin meet">
@@ -872,6 +879,8 @@
 							fill="#322823"></path>
 				</svg>
 			</div>
+
+			<!-- слайдеры -->
 			<div class="reviews-slider">
 				<div class="reviews-slider__slide reviews-slider__slide-active">
 					<div class="reviews-slider__slide-img"><img src="./images/reviews/ava1.jpg" alt=""></div>
@@ -913,7 +922,14 @@
 						ключ* в моей однокомнатной квартире. Предварительная смета была расписана подробно, понятно по каждому виду
 						работ. Фактическая смета ... <a class="link-reviews-detail">Подробнее</a></div>
 				</div>
-			</div><!-- /reviews-slider --></div>
+			</div><!-- /reviews-slider -->
+		</div>
+
+
+
+
+
+			<!-- точки -->
 		<div class="slider-dots slider-dots-reviews slider-dots-base">
 			<div class="dot dot-reviews switch dot_active">
 				<div class="dot__inner"></div>
@@ -931,6 +947,8 @@
 				<div class="dot__inner"></div>
 			</div>
 		</div><!-- /slider-dots_gray --></div><!-- /reviews -->
+
+
 	<div class="wave-block feedback-block">
 		<div class="wrapper_feedback">
 			<div class="section-title feedback-block__title feedback-block__title_social mobile-hide tablet-hide">Узнайте расчет
@@ -963,6 +981,10 @@
 			</form>
 		</div>
 	</div><!-- /feedback-block -->
+
+
+
+
 	<div class="faq" id="faq">
 		<div class="wrapper_middle">
 			<div class="section-title faq__title">Часто задаваемые <span>вопросы</span></div>
