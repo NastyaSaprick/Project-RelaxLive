@@ -1,11 +1,12 @@
-import sliders  from "./modules/sliders";
-import modal  from "./modules/modal";
-import menu  from "./modules/menu";
-import accordion  from "./modules/accordion";
-import scroll  from "./modules/scroll";
-import mask  from "./modules/mask";
-import clue  from "./modules/clue";
-import number  from "./modules/number";
+import sliders  from "./modules/sliders";//18
+import modal  from "./modules/modal";//5,8,17
+import menu  from "./modules/menu";//2,3
+import accordion  from "./modules/accordion";//19
+import scroll  from "./modules/scroll";//4
+import mask  from "./modules/mask";//6
+import clue  from "./modules/clue";//9
+import number  from "./modules/number";//1
+import sliderFormula  from "./modules/sliderFormula";//10
 
 
 
@@ -17,4 +18,5 @@ scroll()
 mask()
 clue()
 number()
+sliderFormula()
 //npm run watch

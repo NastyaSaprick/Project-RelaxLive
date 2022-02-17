@@ -1108,6 +1108,7 @@ template, [hidden] {
 }
 @media (max-width: 1024px) {
     .formula-slider {
+    display: flex;    
         min-height: 265px;
         margin-top: 52px;
     }
@@ -1117,8 +1118,9 @@ template, [hidden] {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     font-size: 18px;
+
 }
 
 .formula-slider__slide:before {
@@ -1157,6 +1159,22 @@ template, [hidden] {
 @media (max-width: 1024px) {
     .formula-slider__slide .formula-item__icon-inner {
         background: none;
+    }
+    .formula-slider{
+        /* overflow: hidden; */
+        position: relative;
+        width: 25%;
+        margin: auto;
+    }
+    .formula-item , .formula-slider__slide{
+        position: absolute;
+        display: none;
+    }
+    #formula-arrow_left, 
+    #formula-arrow_right{
+        margin: auto;
+        display: flex;
+        top: 60%;
     }
 }
 
