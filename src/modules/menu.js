@@ -54,15 +54,8 @@ const menu = () => {
 
 //5. Полный список услуг и цен в меню --------------------------------------------------------------------------
   const modalMenu = document.querySelector('.popup-repair-types')//блок с модальным окном 
-  const buttonsMenu = document.querySelectorAll('.link-list-menu')//кнопка открывающая модальное окно
   const closeBtnMenu = modalMenu.querySelector('.close')//крестик закрывающий модальное окно
 
-  //открывает модальное окно
-  buttonsMenu.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modalMenu.style.display = 'flex'
-    })
-  })
   //закрывает модальное окно
   closeBtnMenu.addEventListener('click', () => {
     modalMenu.style.display = 'none'

@@ -4728,7 +4728,7 @@ div.wave-block:nth-child(17):after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* visibility: hidden; */
+    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
@@ -4748,18 +4748,7 @@ div.wave-block:nth-child(17):after {
 }
 
 /*модальные окна*/
-.popup-menu{
-    visibility: hidden;
-}
-.popup-repair-types{
-    display: none;
-}
-.popup-privacy{
-    display: none;
-}
-.popup-consultation{
-    display: none;
-}
+
 
 @media (max-width: 575px) {
     .popup {

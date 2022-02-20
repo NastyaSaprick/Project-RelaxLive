@@ -1,58 +1,41 @@
 const modal = () => {
-//5. Полный список услуг и цен--------------------------------------------------------------------------------
-  const modal = document.querySelector('.popup-repair-types')//блок с модальным окном 
-  const buttons = document.querySelectorAll('.link-list-repair')//кнопка открывающая модальное окно
-  const closeBtn = modal.querySelector('.close')//крестик закрывающий модальное окно
+  const body = document.querySelector('body')
+  const modalTransparency = document.querySelector('.popup-transparency')
+  const modalMenu = document.querySelector('.popup-menu')
+  const modalPrivacy = document.querySelector('.popup-privacy')
+  const modalConsultation = document.querySelector('.popup-consultation')
+  const modalRepair = document.querySelector('.popup-repair-types')
+  const closeBtn = body.querySelectorAll('.close')
 
-  const buttonAction = () =>{
-    closeBtn.addEventListener('click', () => {
-      modal.style.display = 'none'
-    })
+  //
+  const modalOpen = (elem) => {
+    elem.style.visibility = 'visible'
   }
-  //открывает модальное окно
-  buttons.forEach(btn => {
+  const modalClose = (elem) => {
+    elem.style.visibility = ''
+  }
+
+  body.addEventListener('click', (e) => {
+    if (e.target.closest('.transparency-item')) {
+      modalOpen(modalTransparency)
+    } else if (e.target.closest('.menu')) {
+      modalOpen(modalMenu)
+    } else if (e.target.closest('.link-privacy')) {
+      modalOpen(modalPrivacy)
+    } else if (e.target.closest('.consultation-btn')) {
+      modalOpen(modalConsultation)
+    } else if (e.target.closest('.link-Repair')) {
+      modalOpen(modalRepair)
+    } 
+  })
+
+  closeBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-      modal.style.display = 'flex'
+      modalMenu.style.display = 'none'
     })
   })
-  //закрывает модальное окно
-  buttonAction()
 
 
-
-//8. Политика конфедициальности--------------------------------------------------------------------------------
-  const modalPrivacy = document.querySelector('.popup-privacy')//блок с модальным окном 
-  const buttonsPrivacy = document.querySelectorAll('.link-privacy')//кнопка открывающая модальное окно
-  const closeBtnPrivacy = modalPrivacy.querySelector('.close')//крестик закрывающий модальное окно
-
-  //открывает модальное окно
-  buttonsPrivacy.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modalPrivacy.style.display = 'flex'
-    })
-  })
-  //закрывает модальное окно
-  closeBtnPrivacy.addEventListener('click', () => {
-    modalPrivacy.style.display = 'none'
-  })
-
-
-  
-  //17. Проконсультироваться--------------------------------------------------------------------------------
-  const modalConsultation = document.querySelector('.popup-consultation')//блок с модальным окном 
-  const buttonsConsultation = document.querySelectorAll('.button_wide')//кнопка открывающая модальное окно
-  const closeBtnConsultation = modalConsultation.querySelector('.close')//крестик закрывающий модальное окно
-
-  //открывает модальное окно
-  buttonsConsultation.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modalConsultation.style.display = 'flex'
-    })
-  })
-  //закрывает модальное окно
-  closeBtnConsultation.addEventListener('click', () => {
-    modalConsultation.style.display = 'none'
-  })
 }
 
 export default modal
