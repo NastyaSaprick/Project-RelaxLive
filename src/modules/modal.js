@@ -30,8 +30,16 @@ const modal = () => {
   })
 
   closeBtn.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modalMenu.style.display = 'none'
+    btn.addEventListener('click', (e) => {
+      if (e.target.closest('.popup-transparency')) {
+        modalClose(modalTransparency)
+      } else if (e.target.closest('.popup-privacy')) {
+        modalClose(modalPrivacy)
+      } else if (e.target.closest('.popup-consultation')) {
+        modalClose(modalConsultation)
+      } else if (e.target.closest('.popup-repair-types')) {
+        modalClose(modalRepair)
+      }
     })
   })
 
