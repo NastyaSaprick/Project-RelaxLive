@@ -39,6 +39,8 @@ const modal = () => {
         modalClose(modalConsultation)
       } else if (e.target.closest('.popup-repair-types')) {
         modalClose(modalRepair)
+      } else if (e.target.closest('.popup-menu')) {
+        modalClose(modalMenu)
       }
     })
   })

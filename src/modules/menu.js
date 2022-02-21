@@ -52,14 +52,5 @@ const menu = () => {
       });
     }
 
-//5. Полный список услуг и цен в меню --------------------------------------------------------------------------
-  const modalMenu = document.querySelector('.popup-repair-types')//блок с модальным окном 
-  const closeBtnMenu = modalMenu.querySelector('.close')//крестик закрывающий модальное окно
-
-  //закрывает модальное окно
-  closeBtnMenu.addEventListener('click', () => {
-    modalMenu.style.display = 'none'
-  })
-
 }
 export default menu
